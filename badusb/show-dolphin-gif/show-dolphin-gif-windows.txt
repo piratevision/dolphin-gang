@@ -1,0 +1,10 @@
+REM Description: Opens the dolphin gif as big as possible
+
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell invoke-webrequest -UseBasicParsing https://github.com/piratevision/dolphin-gang/blob/main/dolphin.gif?raw=true -outfile $ENV:Temp\dolphin.gif;start $ENV:Temp\dolphin.gif
+ENTER
+DELAY 2500
+F11
+CTRL 0

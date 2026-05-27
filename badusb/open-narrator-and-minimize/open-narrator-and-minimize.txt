@@ -1,0 +1,15 @@
+REM Description: Open narrator and then minimize to tray
+REM I added the ESCAPE in there to try and bypass any setup screen that
+REM might appear. Not sure if it will actually work though.
+
+DELAY 1000
+GUI
+DELAY 500
+STRING narrator
+DELAY 100
+ENTER
+DELAY 2000
+ESCAPE
+DELAY 500
+GUI DOWN
+GUI DOWN
